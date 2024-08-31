@@ -1,0 +1,127 @@
+/* //parrot should be visible on 910+ */
+/* and nav bar on 980 +  */
+
+body{
+margin: 0%;
+padding: 0%;
+}
+
+.card{
+    width: auto;
+    height: 85%;
+  }
+  
+
+
+.navbar{
+    background: rgba(255, 255, 255, 0.978);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+.card img{
+    height:200px;
+object-fit: cover;
+}
+
+/* Hide on small screens */
+@media screen and (max-width: 822px) {
+    .responsive {
+        display: none;
+    }
+}
+
+/* Show on medium, large, and extra-large screens */
+@media screen and (min-width: 822px) {
+    .responsive {
+        display:contents;
+    }
+}
+
+
+
+/*
+<nav class="navbar navbar-expand-sm navbar-dark bg-bright sticky-top" >
+        <div class="container mx-5">
+            <!-- logo -->
+            <a class="navbar-brand" href="javascript:void(0)"><img src="Logo.jpeg" alt="" width="90px"></a>
+
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <!-- DropDOWN -->
+
+            <div class="midLayer">
+                <div class="dropdown dropdown-class d-none d-sm-block ">
+                    <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+                        Catagories
+                    </button>
+                    <div class="dropdown-menu text-dark">
+                        <h5 class="dropdown-header">Catagory</h5>
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                        <a class="dropdown-item" href="#">Another link</a>
+                    </div>
+                </div>
+                <!-- nav links -->
+                <div class="collapse navbar-collapse links" id="mynavbar">
+                    <ul class="navbar-nav  me-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:void(0)">Promotion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:void(0)">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="javascript:void(0)">shops</a>
+                        </li>
+                        <!-- favourite -->
+                        <li class="nav-link nav-item">
+                            <a class=" text-dark " href="javascript:void(0)"> Seller</a>
+                        </li>
+                        <li class="nav-link nav-item">
+                            <a class=" text-dark " href="javascript:void(0)">Favourite<i class="fa fa-star"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- search -->
+            <div class="responsive">
+                <form class="d-flex ">
+                    <input class="form-control " type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+            <div class="sideLayer responsive">
+                <!-- social icons -->
+                <i class="fa fa-facebook-square"></i>
+
+                <i class="fa fa-twitter"></i>
+
+                <i class="fa fa-instagram"></i>
+
+                <i class="fa fa-youtube"></i>
+
+                <!-- login -->
+                <ul class="flex-column">
+                    <li class="list-group-item">
+                        <a class="   text-dark " href="javascript:void(0)"> LOG IN</a>
+                        <a class=" text-dark " href="javascript:void(0)">Register</a>
+                    </li>
+                    <!-- buy button -->
+                    <li class="list-group-item">
+                        <button type="button " class="btn btn-outline-info">
+                            Buy/Sell <span class="badge bg-primary"><i class="fa fa-plus"></i></span>
+                        </button>
+                    </li>
+            </div>
+            </ul>
+        </div>
+    </nav>
